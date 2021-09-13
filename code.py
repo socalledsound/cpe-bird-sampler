@@ -21,7 +21,7 @@ while True:
         cp.pixels[8] = (0, 0, 0)
     if cp.touch_A4:
         cp.pixels[0] = (40, 15, 210)
-        cp.play_file("bird-3.wav")
+        cp.play_file("bird-7.wav")
         time.sleep(0.25)
         cp.pixels[0] = (0, 0, 0)
     if cp.touch_A5:
