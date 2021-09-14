@@ -1,9 +1,17 @@
+# this library comes with python and will pause for us
 import time
+# this library is for our cpe
 from adafruit_circuitplayground import cp
 
+# set the overall brightness
 cp.pixels.brightness = 0.5
 
+# this is always going to run, waiting for a response
 while True:
+    # for each touch sensor, we specify a wave file
+    # and a pixel that turns on to a color
+    # as the chosen sound plays
+    # and then off (0,0,0) after 1/4 second
     if cp.touch_A1:
         cp.pixels[6] = (255, 0, 0)
         cp.play_file("bird-0.wav")
